@@ -86,6 +86,8 @@ function makeChartData(){
   });
 }
 
+
+//comment
 function makeChart(){
   makeChartData();
   var ctx = document.getElementById('chartypants').getContext('2d');

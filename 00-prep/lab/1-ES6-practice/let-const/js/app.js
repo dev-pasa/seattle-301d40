@@ -1,5 +1,6 @@
 'use strict';
 
+
 const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 
 const leftImage = document.getElementById('left');
@@ -15,6 +16,7 @@ const list = document.getElementById('productlist');
 let totalClicks = 0;
 const views = [];
 const votes = [];
+
 
 function Product(name) {
   this.name = name;

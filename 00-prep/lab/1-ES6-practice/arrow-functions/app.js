@@ -111,6 +111,7 @@ let sum = function(a, b, c, d) {
   return a + b + c + d;
 };
 
+
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(sum(1, 2, 3, 4));
 
@@ -118,6 +119,12 @@ let newSum = (a,b,c,d) => `${a,b,c,d}`
 
 console.log(newSum(1, 2, 3, 4));
 
+let newSum = (a, b, c, d) => `${a + b + c + d}`
+
+
+// TODO: Uncomment the following line of code to see the output in the browser console
+console.log(sum(1, 2, 3, 4));
+console.log(newSum(1, 2, 3, 4));
 
 let objectLit = function() {
   return {
@@ -126,9 +133,14 @@ let objectLit = function() {
     key3: 'value3',
   };
 };
-
+let newObjectLit = () => ({
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3',
+});
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(objectLit());
+
 
 const newObjectLit = () => ({
   key1 : 'value1', 
@@ -139,11 +151,15 @@ const newObjectLit = () => ({
 console.log(newObjectLit());
 
 
+console.log(newObjectLit());
+
+
 let sumAndProduct = function(a, b) {
   let sum = a + b;
   let product = a * b;
   return [sum, product];
 };
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(sumAndProduct(3, 9));
@@ -153,15 +169,32 @@ const newSumAndProduct = (a,b) => `Sum ${a +b}, Multiply ${a * b}`
 
 console.log(newSumAndProduct(3, 9))
 
+let newSumAndProduct = (a, b) => {
+  let sum = a + b;
+  let product = a * b;
+  return [sum, product];
+};
+
+// TODO: Uncomment the following line of code to see the output in the browser console
+console.log(sumAndProduct(3, 9));
+console.log(newSumAndProduct(3, 9));
+
+
 let message = function(name) {
   return `Hello, ${name}!`;
 };
 
+let newMessage = name => `Hello, ${name}!`;
+
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(message('Allie'));
 
+
 const newMessage = (name) => `Hello, ${name}!`
 console.log(newMessage('Allie'));
+
+
+console.log(newMessage('Allie'))
 
 
 

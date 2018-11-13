@@ -5,6 +5,7 @@ const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', '
 const leftImage = document.getElementById('left');
 const centerImage = document.getElementById('center');
 const rightImage = document.getElementById('right');
+
 let allProducts = [];
 const container = document.getElementById('image_container');
 const viewed = [];
@@ -29,7 +30,7 @@ function makeRandom() {
 
 function displayPics(){
   while(viewed.length < 6){
-  let rando = makeRandom();
+    let rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
@@ -85,6 +86,7 @@ function makeChartData(){
   });
 }
 
+
 function makeChart(){
   makeChartData();
   const ctx = document.getElementById('chartypants').getContext('2d');
@@ -133,3 +135,12 @@ if(localStorage.busmall){
 }
 
 displayPics();
+
+
+
+// 1. Where did you need to convert const into let to make the code work?
+
+// I had to convert allProducts[] to let, totalClicks, the indexes[i] in the for loop, and rondo.
+
+// 2. Can you identify any patterns/similarities?
+// Arrays that needed data to be inserted had to be changed to let and some of the varialbes that needed their data to be altered. 
